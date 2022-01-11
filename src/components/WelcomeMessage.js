@@ -1,15 +1,15 @@
 import React from 'react'
 import { useContext } from "react";
-import LanguageContext  from "../LanguageContext";
+import {LanguageContext}  from "../App";
 
 const WelcomeMessage = () => {
 
-    const language = useContext(LanguageContext);
+    const [language]= useContext(LanguageContext);
 
 
     return (
         <div>
-            <h1>{language.language}</h1>
+            <h3>{language}</h3>
         </div>
     )
 }

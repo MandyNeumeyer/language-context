@@ -1,19 +1,16 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, createContext } from 'react';
 import Header from "./components/Header"
 import Content from "./components/Content"
-import LanguageContext  from "./LanguageContext";
+
+export const LanguageContext = createContext()
 
 function App() {
 
-  // context in echtzeit, dynamisch (stateful)
-  const [language, setLanguage] = useState("Hallo Welt");
-
-  // wir bauen getter uns setter in ein objekt ein, das wir dem provider übergeben können.
-  const value ={ language, setLanguage}
+  const [language, setLanguage] = useState("Hallo Welt")
 
   return (
-    <LanguageContext.Provider value={value}>
+    <LanguageContext.Provider value={[language, setLanguage]}>
     <div className="App">
       <Header />
       <Content/>
