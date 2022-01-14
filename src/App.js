@@ -1,20 +1,19 @@
 import './App.css';
-import { useState, createContext } from 'react';
+import {useState} from 'react';
 import Header from "./components/Header"
 import Content from "./components/Content"
-
-export const LanguageContext = createContext()
+import {LanguageContext}  from "./LanguageContext";
 
 function App() {
 
-  const [language, setLanguage] = useState("Hallo Welt")
+  const [language, setLanguage] = useState("DE")
 
   return (
     <LanguageContext.Provider value={[language, setLanguage]}>
-    <div className="App">
-      <Header />
-      <Content/>
-    </div>
+      <div className="App">
+        <Header />
+        <Content />
+      </div>
     </LanguageContext.Provider>
   );
 }

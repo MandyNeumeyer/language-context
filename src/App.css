@@ -1,6 +1,69 @@
-.App{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+:root {
+    --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+    --blue: #34495e;
+    --darkblue: #2c3e50;
+  }
+  
+select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+    padding: 0 1em;
+    color: rgb(243, 227, 135);
+    font-size: 1em;
+    background-color: var(--darkblue);
+    cursor: pointer;
 }
+
+  /* Custom Select wrapper */
+.select {
+    position: relative;
+    display: flex;
+    width: 13em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+}
+  /* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: var(--blue);
+    transition: .25s all ease;
+    pointer-events: none;
+}
+  /* Transition */
+.select:hover::after {
+    color: #f39c12;
+}
+
+select, option{
+    text-transform: uppercase;
+}
+  
+.header>p{
+    color: rgb(56, 56, 56);
+    font-size: 0.75em;
+    margin-bottom: 0.2em;
+}
+
+.msg{
+    width:50em;
+    display: flex;
+    margin-top: 7em;
+}
+
+.msg>h3{
+    font-size:4.5em;
+    color:var(--darkblue);
+}
+  
+  
+  

@@ -3,9 +3,9 @@ import LanguageChooser from './LanguageChooser'
 
 const Header = () => {
     return (
-        <div>
-            <h1>Please select your language:</h1>
-            <LanguageChooser/>
+        <div className="header">
+            <p>Please select your language:</p>
+            <LanguageChooser />
         </div>
     )
 }
