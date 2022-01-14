@@ -15,7 +15,9 @@ e.g. (GER, ENG, your mother tongue...). Your WelcomeMessage component needs to s
 
 if the user changes the language settings, the message should be updated accordingly
 Please solve the exercise by using `useContext`.
+
 style to your liking
+
 ---
 
 **structure your app as follows:**
