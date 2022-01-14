@@ -4,6 +4,7 @@
 
 ## :de::argentina::us::south_africa: Create a language chooser :iran::hungary::poland::syria:
 
+---
 ### Task
 
 Create a React App, with a dropdown-list, where the user can choose between different languages,
@@ -17,9 +18,9 @@ Please solve the exercise by using `useContext`.
 
 ---
 
-**structure your app as follows**
+**structure your app as follows:**
 
-- `App` has Header and Content as children
+- `App` has Header and Content as children\
     `Header` 
     `Content`
 
