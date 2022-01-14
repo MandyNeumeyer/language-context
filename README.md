@@ -21,8 +21,8 @@ Please solve the exercise by using `useContext`.
 **structure your app as follows:**
 
 - `App` has Header and Content as children\
-    `Header`\
-    `Content`
+  - `Header`\
+  - `Content`
 
 - `Header` has LanguageChooser as a child:
   - `LanguageChooser` which has a dropdown-list
