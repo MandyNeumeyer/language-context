@@ -1,31 +1,40 @@
-# Language Chooser
 
-## Übersicht
-Von der unten beschriebenen Anwendung sollen zwei Varianten erstellt werden:
-1. nur mit `useState`
-2. zusätzlich mit `createContext`/`useContext`
+# :cartwheeling Exercise
 
-Veranschauliche den Informationsfluss der beiden Programme auf Zettel und Papier und vergleiche.
-Beantworte Fragen mit Hilfe der Diagramme:
-- Welche Information wird benötigt?
-- Wo entsteht Information?
-- Wer benötigt die Information?
-- Wie/wo wird Information an Unterkomponenten weitergegeben, bzw. zugänglich gemacht?
-- Was passiert vom Auswählen einer anderen Sprache bis zum Anzeigen der entsprechenden Willkommens-Nachricht?
+## Create a language chooser :de:	:argentina::us::south_africa::iran::hungary::poland::syria:
 
----
-## Anwendung
-Erstelle eine React-Anwendung.
+### Task
 
-Sie soll eine Dropdown-Liste anzeigen, in der der Nutzer aus verschiedenen Sprachen (DEU, ENG) auswählen kann.
-Zusätzlich soll abhängig von der ausgewählten Sprache eine Willkommensnachricht angezeigt werden:
+Create a React App, with a dropdown-list, where the user can choose between different languages,
+e.g. (GER, ENG, your mother tongue...). Your WelcomeMessage component needs to show the message in the language, the user has choosen.
+
 - DEU: "Hallo Welt!"
 - ENG: "Hello World!"
 
-Strukturiere die Anwendung in die folgenden Komponenten (engl. 'components'):
-- `Header` mit einer Unterkomponente:
-  - `LanguageChooser` mit der Dropdown-Liste
-- `Content` mit einer Unterkomponente:
-  - `WelcomeMessage`, die die Willkommensnachricht entsprechend zur ausgewählten Sprache anzeigt.
+if the user changes the language settings, the message should be updated accordingly
+Please solve the exercise by using `useContext`.
 
-Die angezeigte Nachricht soll sich ändern, wenn der Nutzer eine andere Sprache auswählt.
+---
+
+**structure your app as follows**
+
+- `App` has Header and Content as children
+    `Header` 
+    `Content`
+
+- `Header` has LanguageChooser as a child:
+  - `LanguageChooser` which has a dropdown-list
+- `Content` has WelcomeMessage as a child:
+  - `WelcomeMessage` which shows a Welcome Message in the choosen language
+
+---
+
+### Questions
+
+- Think about, how you would be able to solve the same exercise, by only using the useState hook?
+- Which difference are you noticing about `useState` and `useContext`?
+
+
+
+
+
