@@ -1,7 +1,7 @@
 
 # :cartwheeling Exercise
 
-## Create a language chooser :de:	:argentina::us::south_africa::iran::hungary::poland::syria:
+## :de::argentina::us::south_africa: Create a language chooser :iran::hungary::poland::syria:
 
 ### Task
 
