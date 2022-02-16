@@ -4,7 +4,7 @@ import WelcomeMessage from './WelcomeMessage.js'
 const Content = () => {
     return (
         <div>
-            <WelcomeMessage/>
+            <WelcomeMessage />
         </div>
     )
 }

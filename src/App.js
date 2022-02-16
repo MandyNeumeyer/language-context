@@ -1,8 +1,8 @@
 import './App.css';
-import {useState} from 'react';
+import { useState } from 'react';
 import Header from "./components/Header"
 import Content from "./components/Content"
-import {LanguageContext}  from "./LanguageContext";
+import { LanguageContext } from "./LanguageContext";
 
 function App() {
 

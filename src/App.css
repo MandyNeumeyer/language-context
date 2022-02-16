@@ -48,7 +48,7 @@ select, option{
     text-transform: uppercase;
 }
   
-.header>p{
+.header > p{
     color: rgb(56, 56, 56);
     font-size: 0.75em;
     margin-bottom: 0.2em;
@@ -60,7 +60,7 @@ select, option{
     margin-top: 7em;
 }
 
-.msg>h3{
+.msg > h3{
     font-size:4.5em;
     color:var(--darkblue);
 }

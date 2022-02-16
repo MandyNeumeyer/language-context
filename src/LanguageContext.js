@@ -1,8 +1,8 @@
-// Wir importieren createContext von react.
+// We import createContext from react.
 import { createContext } from 'react';
 
-// Wir initialisieren unseren context, und stellen den initial/oder defaultwert auf "null".
+// We initialise our context, and set the initial/ default value to "null".
 const LanguageContext = createContext();
 
-// Wir exportieren unseren neuen context.
+// We export our new context.
 export { LanguageContext }
